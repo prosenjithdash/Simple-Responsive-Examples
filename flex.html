@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Responsive Flex Layout Practice</title>
+    <style>
+        .container{
+            display: flex;
+            gap: 20px;
+        }
+        .box{
+            background-color: rebeccapurple;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        .container2{
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .item{
+            width: 200px;
+            height: 100px;
+            border: 2px solid red;
+            background-color: #01a2f9;
+        }
+        @media screen and (max-width: 576px){
+            .container{
+                flex-direction: column;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <h2>Flexible Flex</h2>
+    <div class="container">
+        <div class="box">
+            <h4>First Box</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci consectetur odit sapiente laudantium iusto, assumenda ipsum, iure maxime deserunt doloremque placeat, officiis corporis quam veritatis velit earum fuga minima repellendus nemo? Voluptatem sapiente ipsum aspernatur, assumenda inventore perferendis quia nesciunt nostrum veritatis hic earum. Vitae maiores ratione atque ipsa nam?</p>
+        </div>
+        <div class="box">
+            <h4>Second Box</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci consectetur odit sapiente laudantium iusto,
+                assumenda ipsum, iure maxime deserunt doloremque placeat, officiis corporis quam veritatis velit earum fuga minima
+                repellendus nemo? Voluptatem sapiente ipsum aspernatur, assumenda inventore perferendis quia nesciunt nostrum
+                veritatis hic earum. Vitae maiores ratione atque ipsa nam?</p>
+        </div>
+    </div>
+
+   <div class="container2">
+    <!-- .item*10{Item - 10} -->
+        <div class="item">Item - 1</div>
+        <div class="item">Item - 2</div>
+        <div class="item">Item - 3</div>
+        <div class="item">Item - 4</div>
+        <div class="item">Item - 5</div>
+        <div class="item">Item - 6</div>
+        <div class="item">Item - 7</div>
+        <div class="item">Item - 8</div>
+        <div class="item">Item - 9</div>
+        <div class="item">Item - 10</div>
+   </div>
+</body>
+</html>
